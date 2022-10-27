@@ -1,62 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tecno Compro</title>
+    <link rel="shorcuts icon" href="./assets/imagenes/T.png">
+    <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
+
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Contactanos</a></li>
-                <li><a href="">Productos</a>
-                    <ul>
-                        <li><a href="./pages/iphone_14_pro_max.html">- Iphone 14 Pro Max</a></li>
-                        <li><a href="./pages/samsung_galaxy_S22Ultra.html">- Samsung Galaxy S22 Ultra</a></li>                    
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="./index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Productos
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./pages/iphone_14_pro_max.html">Iphone 14 pro max</a>
+                                </li>
+                                <li><a class="dropdown-item" href="./pages/samsung_galaxy_S22Ultra.html">Samsung Galaxy
+                                        S22 Ultra</a></li>
+                                <li><a class="dropdown-item" href="./pages/moto_edge_30_ultra.html">Motorola Edge 30 pro</a>
+                                </li>
+        
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./pages/about_us.html">About Us</a>
+                        </li>
                     </ul>
-                </li>
-                <li><a href="./pages/about_us.html">About us</a></li>
-            </ul>        
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <h1>Bienvenidos a Tecno Compro</h1>
         <section>
-            <div class="main__section-div">
-                <img  src="https://media.ambito.com/p/1c3ec751b378e6dcb68f195a36895239/adjuntos/239/imagenes/039/438/0039438716/smartphones.png" alt="Dos celulares">
-                <img  src="https://media.ambito.com/p/1c3ec751b378e6dcb68f195a36895239/adjuntos/239/imagenes/039/438/0039438716/smartphones.png" alt="Dos celulares">
+            <!-- Title -->
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <h1>Bienvenidos a Tecno Compro</h1>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime repellat hic praesentium, amet assumenda minima quos magnam nulla dicta alias possimus corrupti distinctio quibusdam quasi? Sunt laboriosam molestiae soluta dolor minima quidem qui vero aspernatur excepturi sint accusantium eum, quis asperiores? Alias, omnis sed. Unde, sunt repudiandae! Odio assumenda excepturi ipsam obcaecati, itaque eveniet fugit nam facere reprehenderit consequatur cum. Enim quod tempore fugit voluptatem quia accusantium explicabo sint consequatur, excepturi delectus totam deserunt, ipsam veniam iusto nulla expedita inventore illum deleniti sit soluta laboriosam asperiores id voluptate impedit? Facilis corrupti illum autem consectetur placeat animi numquam, voluptatibus aliquam repellendus. Debitis vel consequatur quaerat repudiandae perspiciatis at dicta sit blanditiis adipisci. A commodi assumenda beatae eius dignissimos atque placeat libero impedit quibusdam, quos cupiditate corporis maiores dolores rem similique harum sequi rerum. Maxime aliquam corrupti quo nulla repellendus enim quas perferendis aperiam excepturi necessitatibus, amet in accusamus alias quam asperiores fugit molestiae doloribus culpa iure! Qui facilis ipsam expedita impedit incidunt commodi dignissimos, animi deserunt dolorum, libero sapiente ab neque eligendi, iusto inventore natus distinctio quod illo maxime! Consequatur quia magnam maiores tempora sit? At neque eveniet error commodi! Atque nam, velit officia aperiam minus quam dolorem eius, excepturi rem eveniet soluta. Est perspiciatis architecto quos voluptas atque beatae explicabo excepturi fugiat nostrum ex assumenda ipsa, voluptatem rerum sit amet quisquam corporis? Nisi pariatur suscipit, unde soluta vel aliquam dolor, itaque reprehenderit consequuntur veritatis tempora rem saepe perspiciatis sapiente in deleniti dolore ea expedita tenetur quod cum quidem ex voluptatem.</h2>
+            <!-- Carousel -->
+            <div class="carousel-flex">
+                <div id="carouselExampleIndicators" class="carousel slide carousel-padding" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/imagenes/1.jpg" class="d-block " alt="Imagen1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/imagenes/2.jpg" class="d-block" alt="Imagen2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/imagenes/3.jpg" class="d-block" alt="Imagen3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
+
+            <!-- Img -->
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                        <div class="card">
+                            <img src="https://p.turbosquid.com/ts-thumb/Vj/ekOsrA/Ka/01/jpg/1642170738/600x600/fit_q87/6ef552bfa3ae1c5a881258bb4f72d2950a29822c/01.jpg"
+                                class="card-img-top" alt="img1">
+                            <div class="card-body">
+                                <h5 class="card-title">S22 Ultra</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                        <div class="card">
+                            <img src="https://s1.eestatic.com/2022/09/09/actualidad/701940435_227019000_1706x960.jpg"
+                                class="card-img-top" alt="img3>
+                        <div class=" card-body">
+                            <h5 class="card-title">Moto Edge 30 pro</h5>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional contentjkfgdjkdlfjg .</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-4 col-xxl-4">
+                        <div class="card">
+                            <img src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-14-pro-5.jpg"
+                                class="card-img-top" alt="img2">
+                            <div class="card-body">
+                                <h5 class="card-title">Iphone 14 pro max</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content. This content is a little bit longer.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class=" col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                        <img src="https://media.ambito.com/p/1c3ec751b378e6dcb68f195a36895239/adjuntos/239/imagenes/039/438/0039438716/smartphones.png"
+                            alt="Dos celulares">
+                    </div>
+                    <div class=" col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                        <img src="https://media.ambito.com/p/1c3ec751b378e6dcb68f195a36895239/adjuntos/239/imagenes/039/438/0039438716/smartphones.png"
+                            alt="Dos celulares">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lorem -->
+            <div class="container index-lorem">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                        <h2> Los smartphones de gama deben ofrecer la mejor experiencia de usuario.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
         </section>
     </main>
     <footer>
-        <section class="textAlign__left-footer-section">
-            <div class="textAlign__left-footer-div">
-                <a id="etiquetaATerminosYCondiciones" href="./pages/about_us.html">Términos y Condiciones</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-between align-items-center">
+                    <div>
+                        <a id="etiquetaATerminosYCondiciones" href="./pages/about_us.html">Términos y Condiciones</a>
+                    </div>
+                    <div class="textAlign__right-footer-div">
+                        <a id="etiquetaALogos" href="https://www.facebook.com/tecnocompro/" target="_blank">
+                            <img src="./assets/imagenes/facebook-logo-3-1.png" alt="logo facebook">
+                        </a>
+                        <a id="etiquetaALogos" href="https://www.instagram.com/tecno__compro/?hl=es" target="_blank">
+                            <img src="./assets/imagenes/logo-ig-png-32464.png" alt="logo Instagram">
+                        </a>
+                        <a id="etiquetaALogos" href="https://twitter.com/tecnocompro" target="_blank">
+                            <img src="./assets/imagenes/Twitter-logo.svg.png" alt="logo Twitter">
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="textAlign__right-footer-div">
-                <a id="etiquetaALogos" href="https://www.facebook.com/tecnocompro/" target="_blank">
-                    <img  src="./imagenes/facebook-logo-3-1.png" alt="logo facebook">
-                </a>
-            
-                <a id="etiquetaALogos" href="https://www.instagram.com/tecno__compro/?hl=es" target="_blank">
-                    <img  src="./imagenes/logo-ig-png-32464.png" alt="logo Instagram">
-                </a>
-
-                <a id="etiquetaALogos" href="https://twitter.com/tecnocompro" target="_blank">
-                    <img  src="./imagenes/Twitter-logo.svg.png" alt="logo Twitter">
-                </a>
-            </div>
-        </section>
+        </div>
     </footer>
+    <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.bundle.js"></script>
 </body>
+
 </html>
