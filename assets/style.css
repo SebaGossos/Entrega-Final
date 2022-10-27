@@ -105,6 +105,14 @@ img{
     font-size: 2rem;
 }
 
+.card{
+    transition: all 1s;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.card:hover{
+    transform: scale(1.05, 1.05);
+}
 .card-img-top{
     width: 450px;
     height: 270px;
@@ -231,6 +239,10 @@ footer a{
 
     grid-template-rows: 1fr 3fr 1fr 4fr 1fr auto auto;
     grid-template-columns: 1fr;
+    animation-duration: 1.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
 }
 
 .title{
@@ -243,6 +255,7 @@ footer a{
     width: 44%;
     text-align: center;
 }
+
 .main-flex{
     display: flex;
     flex-direction: row;
@@ -263,6 +276,10 @@ footer a{
     border-radius: 3%;
     width: 400px;
     height: 400px;
+    transition: all 1s;
+}
+.pictures img:hover{
+    transform: scale(1.2, 1.2);
 }
 .video{
     grid-area: video;
@@ -272,6 +289,10 @@ footer a{
     margin-top: 4%;
     margin-bottom: 4%;
     height: auto;
+    transition: all 1.5s;
+}
+.video:hover{
+    transform: scale(1.2, 1.2);
 }
 .description{
     grid-area: description;
@@ -293,6 +314,17 @@ footer a{
     grid-area: tabla;
     margin: 1% 1% 1% 1%;
     width: 90%;
+}
+/* ANIMACIONES */
+
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
 }
 
 
