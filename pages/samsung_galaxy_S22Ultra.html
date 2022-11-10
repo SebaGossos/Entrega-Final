@@ -11,43 +11,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="../scss/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
-            <div class="container-fluid ">
-                <a class="navbar-brand" href="../index.html">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Contactanos</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Productos
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./iphone_14_pro_max.html">Iphone 14 pro max</a>
-                                </li>
-                                <li><a class="dropdown-item" href="./samsung_galaxy_S22Ultra.html">Samsung Galaxy
-                                        S22 Ultra</a></li>
-                                <li><a class="dropdown-item" href="./moto_edge_30_ultra.html">Motorola Edge 30 pro</a>
-                                </li>
-                            </ul>                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="./about_us.html">About Us</a>
-                        </li>
+        <nav>
+            <ul class="menuHorizontal">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./form.html">Contactanos</a></li>
+                <li>
+                    <a href="">Productos</a>
+                    <ul class="menuVertical">
+                        <li><a href="./iphone_14_pro_max.html">Iphone 14 pro
+                            max</a></li>
+                        <li><a href="./samsung_galaxy_S22Ultra.html">Samsung
+                            Galaxy
+                            S22 Ultra</a></li>
+                        <li><a href="./moto_edge_30_ultra.html">Motorola Edge 30
+                            pro</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
+                </li>
+                <li><a href="./about_us.html">About Us</a></li>
+            </ul>
+        </nav>    
     </header>
     
     <main class="main-father">
@@ -155,9 +141,9 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 d-flex justify-content-between align-items-center">
                     <div>
-                        <a id="etiquetaATerminosYCondiciones" href="./about_us.html">Términos y Condiciones</a>
+                        <a id="TerminosYCondiciones" href="./about_us.html">Términos y Condiciones</a>
                     </div>
-                    <div class="textAlign__right-footer-div">
+                    <div class="textAlign__right">
                         <a id="etiquetaALogos" href="https://www.facebook.com/tecnocompro/" target="_blank">
                             <img src="../assets/imagenes/facebook-logo-3-1.png" alt="logo facebook">
                         </a>

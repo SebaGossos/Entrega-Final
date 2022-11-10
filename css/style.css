@@ -8,28 +8,6 @@ html{
 }
 
 
-/* .main-father{
-    display: grid;
-    grid-template-areas:'titulo  ' 
-                        'fotos    '
-                        'lorem     ';
-
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-}
-
-
-.title{
-    grid-area: titulo;
-    background-color: aliceblue;
-}
-.img{
-    grid-area: fotos;
-}
-.lorem{
-    grid-area: lorem;
-} */
-
 
 header{
     height: 100px;

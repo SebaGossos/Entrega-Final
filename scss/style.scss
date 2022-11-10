@@ -1,0 +1,560 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgb(176, 176, 96);
+
+}
+header{
+    height: 80px;
+}
+footer{
+    background-color: rgb(175, 37, 37);
+    position:static;
+    height: 60px;
+    margin: 20px 0% 0% 0%;
+    a{
+        color: aliceblue;
+    }
+    .row{
+        width: 100%;
+        .heightFooter{
+            margin: 0%;
+            padding: 0%;
+            height: 60px;
+        }
+    }
+    .textAlign{
+        &__right{
+            display: inline-flex;
+            padding: 1%;
+        }
+    }
+    #TerminosYCondiciones{
+        max-width: 100%;
+        font-size: 2.2rem;
+        text-decoration: none;
+    }
+    #etiquetaALogos{
+        width: 8rem;
+        padding-left: 22%;
+    }
+}
+// index
+.img_margin{
+    margin-top: 3%;
+}
+
+// barra de navegacion
+nav{
+    position: fixed;
+    background-color: #333;
+    font-size: 20px;
+    width: 100%;
+    z-index: 2;
+    ul{
+        padding: 0%;
+        margin: 0%;
+    }
+}
+.menuHorizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    > li > a{
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+    }
+    > li:hover{
+        background-color: red;
+    }
+    li:hover .menuVertical{
+        display: block;
+    }
+}
+.menuVertical{
+    position: absolute;
+    z-index: 3;
+    display: none;
+    list-style: none;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.5);
+    li:hover{
+        background-color: black;
+    }
+    li a{
+        display: block;
+        color: white;
+        padding: 15px 15px 15px 15px;
+        text-decoration: none;
+    }
+}
+
+/* Esto es para mi html del Samsung galaxy S22 ULTRA */
+a{
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+}
+section{
+    position: static;
+    width: 100%;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size:800%;
+    text-align:center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size:350%;
+    text-align: center;
+    margin: 1%;
+}
+img{
+    max-width: 100%;
+}
+
+// Contactanos Formulario
+.body_grid-form{
+    display: grid;
+    grid-template-areas:'1' 
+                        '2'
+                        '3'
+                        ;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-columns: 100%;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
+}
+.header-contactanos{
+    grid-area: 1;
+}
+.main-contactanos{
+    grid-area: 2;
+}
+.footer-contactanos{
+    grid-area: 3;
+}
+.h2-form{
+    text-align: center;
+    background-color: rgb(33, 21, 164);
+    margin: 0;
+    padding: 1.5rem;
+    width: auto;
+    border-radius: 1rem;
+}
+label{
+    font-size: 2rem;
+}
+.form-check label{
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+input {
+    height: 44px;
+}
+::placeholder{
+    font-size: 1.5rem;
+}
+.form-check-input{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.btn-size{
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Redefinición de clases de bootstrap */
+
+.navbar{
+    height: 4rem;
+    font-size:2rem;
+}
+.navbar-brand{
+    font-size: 2rem;
+}
+.card{
+    transition: all 1s;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    &:hover{
+        transform: scale(1.05, 1.05);
+    }
+    &__img-top{
+        width: 450px;
+        height: 270px;
+    }
+}
+.height{
+    display: flex;
+    justify-content:space-between;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(52, 123, 190);
+    font-size: 300%;
+}
+.subtitulo{
+    margin-top: 1%;
+    background-color: chocolate;
+    font-size: rem;
+}
+.carousel-padding{
+    padding: 1%;
+}
+.carousel-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    img{
+        width: 1300px;
+        height: 850px;
+    }
+}
+#h2S22Ultra__imagenesYReview{
+    color: blue;
+    font-size: 39px;
+    font-family:'Roboto', sans-serif;
+    margin:0% 0% 1% 1%;
+    padding: 1% 1% 1% 1%;
+    background-color: aliceblue;
+    width: 22%;
+    text-align: center;
+}
+/* Footer */
+.footer-flex{
+    display: flex;
+    justify-content:flex-end;
+}
+
+/* About Us */
+.aboutUs-title{
+    margin-bottom: 3%;
+}
+.terminosYCondiciones{
+    font-size: large;
+    padding: 0% 3% 3% 3%;
+}
+
+/* Paginas de celulares */
+.main-father{
+    display: grid;
+    grid-template-areas:'title1' 
+                        'tabla'
+                        'title2'
+                        'pictures'
+                        'title3'
+                        'video'
+                        'description'
+                        ;
+    grid-template-rows: 1fr auto 1fr auto 1fr auto auto;
+    grid-template-columns: 1fr;
+    animation-duration: 1.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
+}
+.title{
+    color: blue;
+    font-size: 39px;
+    font-family:'Roboto', sans-serif;
+    margin:1% 0% 1% 1%;
+    padding: 1% 1% 1% 1%;
+    background-color: aliceblue;
+    width: 44%;
+
+    &Grid-1{
+        grid-area: title1;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+    }
+    &Grid-2{
+        grid-area: title2;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+    }
+    &Grid-3{
+        grid-area: title3;
+        justify-self: center;
+        align-self: center;
+        width: 100%;
+    }
+}
+table{
+    background-color: white;
+    text-align: center;
+    border: solid;
+    border-collapse:collapse;
+    width: 90%;
+}
+th,td{
+    padding: 0%;
+    font-size: 200%;
+    border:solid;
+}
+.main-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.table{
+    grid-area: tabla;
+    width: 100%;
+}
+.pictures{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 1%;
+    img{
+        display: block;
+        margin-right: 3rem;
+        grid-area: pictures;
+        border-radius: 3%;
+        width: 400px;
+        height: 400px;
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.2, 1.2);
+        }
+    }
+}
+.video{
+    grid-area: video;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: auto;
+    transition: all 1s;
+    &:hover{
+        transform: scale(1.03, 1.03);
+    }
+    iframe{
+        width: 1280px;
+        height: 720px;
+    }
+}
+
+.description{
+    grid-area: description;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1% 0% 1% 1%;
+    text-align: center;
+    p{
+        background-color: aliceblue;
+        padding: 1% 1% 1% 1%;
+        width: 80%;
+        color: rgb(0, 0, 0);
+        font-size: 39px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+.footer-size{
+    width: 100%;
+}
+/* ANIMACIONES */
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* Medias queries */
+@media screen and (max-width: 1400px) {
+    .card__img-top{
+        width: 400px;
+        height: 220px;
+    }
+    .carousel-flex img{
+        width: 1125px;
+        height: 750px;
+    }
+    .table-responsive{
+        width: 90%;
+    }
+    .pictures{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    .video{
+        iframe{
+            width: 854px;
+            height: 480px;
+        }
+    }
+}
+@media screen and (max-width: 1200px) {
+    .card__img-top{
+        width: 500px;
+        height: 280px;
+    }
+    .carousel-flex img{
+        width: 1000px;
+        height: 650px;
+    }
+    .table-responsive{
+        width: 85%;
+    }
+
+}
+@media screen and (max-width: 992px) {
+    .card__img-top{
+        width: 400px;
+        height: 230px;
+    }
+    .carousel-flex img{
+        width: 800px;
+        height: 500px;
+    }
+    .table-responsive{
+        width: 80%;
+    }
+    .pictures{
+        img{
+            width: 520px;
+            height: 520px;
+        }
+    }
+    .video{
+        iframe{
+            width:  640px;
+            height: 360px;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .card__img-top{
+        width: 450px;
+        height: 150px;
+    }
+    .carousel-flex img{
+        width: 580px;
+        height: 380px;
+    }
+    .table-responsive{
+        width: 75%;
+    }
+    .video{
+        iframe{
+            width:  426px;
+            height: 240px;
+        }
+    }
+}
+@media screen and (max-width: 576px){
+    .card__img-top{
+        width: 550px;
+        height: 280px;
+    }
+    .carousel-flex img{
+        width: 700px;
+        height: 300px;
+    }
+    nav{
+        font-size: 15px;
+    }
+    .menuVertical{
+        width: 180px;
+    }
+    h1{
+        font-size:500%;
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+    footer {
+        #etiquetaALogos{
+            width: 6.5rem;
+            padding-left: 22%;
+        }
+      }
+      footer {
+        #TerminosYCondiciones{
+            max-width: 100%;
+            font-size: 1.7rem;
+            text-decoration: none;
+        }
+    }
+    .table-responsive{
+        width: 70%;
+    }
+    .pictures{
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+@media screen and (max-width: 450px){
+    .card__img-top{
+        width: 450px;
+        height: 220px;
+    }
+    .carousel-flex img{
+        width: 450px;
+        height: 200px;
+    }
+    nav{
+        font-size: 1.04rem;
+    }
+    .menuVertical{
+        width: 130px;
+    }
+    footer {
+        #etiquetaALogos{
+            width: 5.5rem;
+            padding-left: 22%;
+        }
+      }
+    footer {
+        #TerminosYCondiciones{
+            max-width: 100%;
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+    }
+    .table-responsive{
+        width: 65%;
+    }
+    .pictures{
+        img{
+            width: 320px;
+            height: 320px;
+        }
+    }
+}
+
