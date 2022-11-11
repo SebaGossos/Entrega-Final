@@ -9,7 +9,6 @@ html{
 
 body{
     background-color: rgb(176, 176, 96);
-
 }
 header{
     height: 80px;
@@ -267,19 +266,21 @@ input {
                         ;
     grid-template-rows: 1fr auto 1fr auto 1fr auto auto;
     grid-template-columns: 1fr;
+    row-gap: 33px;
     animation-duration: 1.5s;
     animation-name: aparecer;
     animation-iteration-count: 1;
     animation-timing-function:ease-in;
 }
+
 .title{
     color: blue;
-    font-size: 39px;
+    font-size: 44px;
     font-family:'Roboto', sans-serif;
-    margin:1% 0% 1% 1%;
-    padding: 1% 1% 1% 1%;
+    padding: 2.2%;
     background-color: aliceblue;
-    width: 44%;
+    border-radius: 1rem;
+    width: auto;
 
     &Grid-1{
         grid-area: title1;
@@ -306,11 +307,11 @@ table{
     border: solid;
     border-collapse:collapse;
     width: 90%;
-}
-th,td{
-    padding: 0%;
-    font-size: 200%;
-    border:solid;
+    th,td{
+        padding: 0%;
+        font-size: 200%;
+        border:solid;
+    }
 }
 .main-flex{
     display: flex;
@@ -322,6 +323,9 @@ th,td{
 .table{
     grid-area: tabla;
     width: 100%;
+}
+.table-responsive{
+    width: 95%;
 }
 .pictures{
     display: flex;
@@ -400,9 +404,6 @@ th,td{
         width: 1125px;
         height: 750px;
     }
-    .table-responsive{
-        width: 90%;
-    }
     .pictures{
         display: flex;
         flex-direction: row;
@@ -427,9 +428,7 @@ th,td{
         width: 1000px;
         height: 650px;
     }
-    .table-responsive{
-        width: 85%;
-    }
+
 
 }
 @media screen and (max-width: 992px) {
@@ -440,9 +439,6 @@ th,td{
     .carousel-flex img{
         width: 800px;
         height: 500px;
-    }
-    .table-responsive{
-        width: 80%;
     }
     .pictures{
         img{
@@ -456,6 +452,11 @@ th,td{
             height: 360px;
         }
     }
+    .description{
+        p{
+            font-size: 33px;
+        }
+    }
 }
 @media screen and (max-width: 768px){
     .card__img-top{
@@ -467,13 +468,22 @@ th,td{
         height: 380px;
     }
     .table-responsive{
-        width: 75%;
+        width: 90%;
     }
     .video{
         iframe{
             width:  426px;
             height: 240px;
         }
+    }
+    .description{
+        p{
+            font-size: 27px;
+        }
+    }
+    .title{
+        font-size: 33px;
+        padding: 2.5%;
     }
 }
 @media screen and (max-width: 576px){
@@ -510,13 +520,21 @@ th,td{
         }
     }
     .table-responsive{
-        width: 70%;
+        width: 85%;
     }
     .pictures{
         img{
             width: 400px;
             height: 400px;
         }
+    }
+    .description{
+        p{
+            font-size:20px;
+        }
+    }
+    .title{
+        font-size: 27px;
     }
 }
 @media screen and (max-width: 450px){
@@ -547,14 +565,22 @@ th,td{
             text-decoration: none;
         }
     }
+    table{
+        th,td{
+            font-size: 150%;
+        }
+    }
     .table-responsive{
-        width: 65%;
+        width: 80%;
     }
     .pictures{
         img{
             width: 320px;
             height: 320px;
         }
+    }
+    .title{
+        font-size: 24px;
     }
 }
 
