@@ -9,16 +9,12 @@ html {
   font-size: 62.5%;
 }
 
-body {
-  background-color: rgb(176, 176, 96);
-}
-
 header {
   height: 80px;
 }
 
 footer {
-  background-color: rgb(175, 37, 37);
+  background-color: #e40e0e;
   position: static;
   height: 60px;
   margin: 20px 0% 0% 0%;
@@ -54,7 +50,7 @@ footer #etiquetaALogos {
 
 nav {
   position: fixed;
-  background-color: #333;
+  background-color: #454545;
   font-size: 20px;
   width: 100%;
   z-index: 2;
@@ -76,7 +72,7 @@ nav ul {
   text-decoration: none;
 }
 .menuHorizontal > li:hover {
-  background-color: red;
+  background-color: #ee4242;
 }
 .menuHorizontal li:hover .menuVertical {
   display: block;
@@ -88,10 +84,10 @@ nav ul {
   display: none;
   list-style: none;
   width: 250px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #7b7b7b;
 }
 .menuVertical li:hover {
-  background-color: black;
+  background-color: #fd7b7b;
 }
 .menuVertical li a {
   display: block;
@@ -113,7 +109,7 @@ section {
 
 h1 {
   font-family: "Roboto", sans-serif;
-  color: rgb(255, 255, 255);
+  color: #3e5f8a;
   font-size: 800%;
   text-align: center;
   margin-top: 4%;
@@ -219,6 +215,8 @@ input {
   transition: all 1s;
   margin-top: 10%;
   margin-bottom: 10%;
+  background-color: #7b7b7b;
+  border: 0px;
 }
 .card:hover {
   transform: scale(1.05, 1.05);
@@ -226,6 +224,13 @@ input {
 .card__img-top {
   width: 450px;
   height: 270px;
+}
+.card a {
+  text-decoration: none;
+}
+.card a:hover {
+  background-color: #3e5f8a;
+  color: white;
 }
 
 .height {
@@ -331,7 +336,7 @@ input {
 }
 
 table {
-  background-color: white;
+  background-color: #cadffb;
   text-align: center;
   border: solid;
   border-collapse: collapse;
@@ -341,6 +346,7 @@ table th, table td {
   padding: 0%;
   font-size: 200%;
   border: solid;
+  color: black;
 }
 
 .main-flex {
@@ -354,6 +360,10 @@ table th, table td {
 .table {
   grid-area: tabla;
   width: 100%;
+}
+.table a {
+  text-decoration: none;
+  color: black;
 }
 
 .table-responsive {

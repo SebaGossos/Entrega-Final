@@ -1,3 +1,4 @@
+@import "./scss/colores/paleta_de_colores.scss";
 *{
     padding: 0;
     margin: 0;
@@ -7,14 +8,11 @@ html{
     font-size: 62.5%;
 }
 
-body{
-    background-color: rgb(176, 176, 96);
-}
 header{
     height: 80px;
 }
 footer{
-    background-color: rgb(175, 37, 37);
+    background-color: map-get($paleta_de_colores2,primero);
     position:static;
     height: 60px;
     margin: 20px 0% 0% 0%;
@@ -53,7 +51,7 @@ footer{
 // barra de navegacion
 nav{
     position: fixed;
-    background-color: #333;
+    background-color: map-get($paleta_de_colores2,cuarto);
     font-size: 20px;
     width: 100%;
     z-index: 2;
@@ -73,7 +71,7 @@ nav{
         text-decoration: none;
     }
     > li:hover{
-        background-color: red;
+        background-color: map-get($paleta_de_colores2,segundo);
     }
     li:hover .menuVertical{
         display: block;
@@ -85,9 +83,9 @@ nav{
     display: none;
     list-style: none;
     width: 250px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: map-get($paleta_de_colores2,quinto);
     li:hover{
-        background-color: black;
+        background-color:map-get($paleta_de_colores2,tercero);
     }
     li a{
         display: block;
@@ -109,7 +107,7 @@ section{
 
 h1{
     font-family: 'Roboto', sans-serif;
-    color: rgb(255, 255, 255);
+    color: map-get($paleta_de_colores1,primero);
     font-size:800%;
     text-align:center;
     margin-top: 4%;
@@ -194,12 +192,21 @@ input {
     transition: all 1s;
     margin-top: 10%;
     margin-bottom: 10%;
+    background-color: map-get($paleta_de_colores2,quinto);
+    border: 0px;
     &:hover{
         transform: scale(1.05, 1.05);
     }
     &__img-top{
         width: 450px;
         height: 270px;
+    }
+    a{
+        text-decoration: none;
+        &:hover{
+            background-color: map-get($paleta_de_colores1,primero);
+            color: white;
+        }
     }
 }
 .height{
@@ -302,15 +309,16 @@ input {
     }
 }
 table{
-    background-color: white;
+    background-color: map-get($paleta_de_colores1,quinto);
     text-align: center;
     border: solid;
     border-collapse:collapse;
     width: 90%;
     th,td{
         padding: 0%;
-        font-size: 200%;
+        font-size: 200%;  
         border:solid;
+        color:black;
     }
 }
 .main-flex{
@@ -323,6 +331,10 @@ table{
 .table{
     grid-area: tabla;
     width: 100%;
+    a{
+        text-decoration: none;
+        color: black;
+    }
 }
 .table-responsive{
     width: 95%;
@@ -512,7 +524,7 @@ table{
             padding-left: 22%;
         }
       }
-      footer {
+    footer {
         #TerminosYCondiciones{
             max-width: 100%;
             font-size: 1.7rem;
