@@ -99,29 +99,41 @@ nav ul {
 /* Esto es para mi html del Samsung galaxy S22 ULTRA */
 a {
   color: rgb(0, 0, 0);
-  font-family: "Roboto", sans-serif;
+  font-family: "Bebas", sans-serif;
 }
 
 section {
   position: static;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  gap: 33px;
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Slab", serif;
   color: #3e5f8a;
-  font-size: 800%;
+  font-size: 80px;
   text-align: center;
   margin-top: 4%;
-  margin-bottom: 4%;
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
-  color: rgb(255, 255, 255);
-  font-size: 350%;
+  font-family: "Rubik", sans-serif;
+  color: white;
+  font-size: 30px;
   text-align: center;
   margin: 1%;
+}
+
+.card-body h5 {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.card-body p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
 }
 
 img {
@@ -131,7 +143,7 @@ img {
 .body_grid-form {
   display: grid;
   grid-template-areas: "1" "2" "3";
-  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -141,6 +153,7 @@ img {
           animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in;
           animation-timing-function: ease-in;
+  min-height: 100vh;
 }
 
 .header-contactanos {
@@ -215,8 +228,8 @@ input {
   transition: all 1s;
   margin-top: 10%;
   margin-bottom: 10%;
-  background-color: #7b7b7b;
-  border: 0px;
+  background-color: #3e5f8a;
+  border: 0;
 }
 .card:hover {
   transform: scale(1.05, 1.05);
@@ -227,10 +240,10 @@ input {
 }
 .card a {
   text-decoration: none;
+  color: white;
 }
 .card a:hover {
-  background-color: #3e5f8a;
-  color: white;
+  background-color: #7b7b7b;
 }
 
 .height {
@@ -243,9 +256,14 @@ input {
 }
 
 .subtitulo {
-  margin-top: 1%;
-  background-color: chocolate;
-  font-size: rem;
+  background-color: #3e5f8a;
+  margin-bottom: 1%;
+  border-radius: 1rem;
+  filter: drop-shadow(1px 2px 3px black);
+}
+
+.carousel-indicators {
+  margin-bottom: 4rem;
 }
 
 .carousel-padding {
@@ -259,8 +277,8 @@ input {
   width: 100%;
 }
 .carousel-flex img {
-  width: 1300px;
-  height: 850px;
+  width: 1800px;
+  height: 1200px;
 }
 
 #h2S22Ultra__imagenesYReview {
@@ -308,11 +326,12 @@ input {
 }
 
 .title {
-  color: blue;
-  font-size: 44px;
+  color: white;
+  font-size: 65px;
+  font-weight: 600;
   font-family: "Roboto", sans-serif;
   padding: 2.2%;
-  background-color: aliceblue;
+  background-color: #ee4242;
   border-radius: 1rem;
   width: auto;
 }
@@ -417,12 +436,12 @@ table th, table td {
   text-align: center;
 }
 .description p {
-  background-color: aliceblue;
   padding: 1% 1% 1% 1%;
-  width: 80%;
+  width: 85%;
   color: rgb(0, 0, 0);
   font-size: 39px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: justify;
 }
 
 .footer-size {
@@ -468,6 +487,9 @@ table th, table td {
     width: 854px;
     height: 480px;
   }
+  .description p {
+    font-size: 33px;
+  }
 }
 @media screen and (max-width: 1200px) {
   .card__img-top {
@@ -477,6 +499,9 @@ table th, table td {
   .carousel-flex img {
     width: 1000px;
     height: 650px;
+  }
+  h1 {
+    font-size: 58px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -497,7 +522,19 @@ table th, table td {
     height: 360px;
   }
   .description p {
-    font-size: 33px;
+    font-size: 29px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .card-body h5 {
+    font-size: 17px;
+  }
+  .card-body p {
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -516,12 +553,21 @@ table th, table td {
     width: 426px;
     height: 240px;
   }
-  .description p {
-    font-size: 27px;
-  }
   .title {
     font-size: 33px;
     padding: 2.5%;
+  }
+  h1 {
+    font-size: 38px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  .card-body h5 {
+    font-size: 15px;
+  }
+  .card-body p {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -540,9 +586,7 @@ table th, table td {
     width: 180px;
   }
   h1 {
-    font-size: 500%;
-    margin-top: 5%;
-    margin-bottom: 0%;
+    font-size: 33px;
   }
   footer #etiquetaALogos {
     width: 6.5rem;
@@ -565,6 +609,15 @@ table th, table td {
   }
   .title {
     font-size: 27px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .card-body h5 {
+    font-size: 15px;
+  }
+  .card-body p {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -603,5 +656,8 @@ table th, table td {
   }
   .title {
     font-size: 24px;
+  }
+  h1 {
+    font-size: 25px;
   }
 }/*# sourceMappingURL=style.css.map */

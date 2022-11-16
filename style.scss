@@ -1,4 +1,6 @@
 @import "./scss/colores/paleta_de_colores.scss";
+@import "./scss/tipografias/tipografias.scss";
+
 *{
     padding: 0;
     margin: 0;
@@ -98,28 +100,41 @@ nav{
 /* Esto es para mi html del Samsung galaxy S22 ULTRA */
 a{
     color: rgb(0, 0, 0);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Bebas', sans-serif;
 }
 section{
     position: static;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    gap: 33px;
 }
 
 h1{
-    font-family: 'Roboto', sans-serif;
+    @include titles;
     color: map-get($paleta_de_colores1,primero);
-    font-size:800%;
+    font-size:80px;
     text-align:center;
     margin-top: 4%;
-    margin-bottom: 4%;
 }
 h2{
-    font-family: 'Roboto', sans-serif;
-    color: rgb(255, 255, 255);
-    font-size:350%;
+    @include subtitles;
+    color: white;
+    font-size:30px;
     text-align: center;
     margin: 1%;
 }
+.card-body{
+    h5{
+        @include subtitles;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    p{
+        @include description;
+        font-size:16px;
+    }
+} 
 img{
     max-width: 100%;
 }
@@ -131,12 +146,13 @@ img{
                         '2'
                         '3'
                         ;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-columns: 100%;
     animation-duration: 1s;
     animation-name: aparecer;
     animation-iteration-count: 1;
     animation-timing-function:ease-in;
+    min-height: 100vh;
 }
 .header-contactanos{
     grid-area: 1;
@@ -192,8 +208,8 @@ input {
     transition: all 1s;
     margin-top: 10%;
     margin-bottom: 10%;
-    background-color: map-get($paleta_de_colores2,quinto);
-    border: 0px;
+    background-color: map-get($paleta_de_colores1,primero);
+    border: 0;
     &:hover{
         transform: scale(1.05, 1.05);
     }
@@ -203,9 +219,9 @@ input {
     }
     a{
         text-decoration: none;
+        color: white;
         &:hover{
-            background-color: map-get($paleta_de_colores1,primero);
-            color: white;
+            background-color: map-get($paleta_de_colores2,quinto);
         }
     }
 }
@@ -218,9 +234,14 @@ input {
     font-size: 300%;
 }
 .subtitulo{
-    margin-top: 1%;
-    background-color: chocolate;
-    font-size: rem;
+    background-color:map-get($paleta_de_colores1, primero);
+    margin-bottom: 1%;
+    border-radius: 1rem;
+    filter: drop-shadow(1px 2px 3px black);
+}
+// CAROUSEL
+.carousel-indicators{
+    margin-bottom: 4rem;
 }
 .carousel-padding{
     padding: 1%;
@@ -231,8 +252,8 @@ input {
     align-items: center;
     width: 100%;
     img{
-        width: 1300px;
-        height: 850px;
+        width: 1800px;
+        height: 1200px;
     }
 }
 #h2S22Ultra__imagenesYReview{
@@ -281,11 +302,12 @@ input {
 }
 
 .title{
-    color: blue;
-    font-size: 44px;
+    color: white;
+    font-size: 65px ;
+    font-weight: 600;
     font-family:'Roboto', sans-serif;
     padding: 2.2%;
-    background-color: aliceblue;
+    background-color: map-get($paleta_de_colores2, segundo);
     border-radius: 1rem;
     width: auto;
 
@@ -384,12 +406,12 @@ table{
     margin:1% 0% 1% 1%;
     text-align: center;
     p{
-        background-color: aliceblue;
         padding: 1% 1% 1% 1%;
-        width: 80%;
+        width: 85%;
         color: rgb(0, 0, 0);
         font-size: 39px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: justify;
     }
 }
 .footer-size{
@@ -430,6 +452,11 @@ table{
             height: 480px;
         }
     }
+    .description{
+        p{
+            font-size: 33px;
+        }
+    }
 }
 @media screen and (max-width: 1200px) {
     .card__img-top{
@@ -440,8 +467,9 @@ table{
         width: 1000px;
         height: 650px;
     }
-
-
+    h1{
+        font-size: 58px;
+    }
 }
 @media screen and (max-width: 992px) {
     .card__img-top{
@@ -466,9 +494,23 @@ table{
     }
     .description{
         p{
-            font-size: 33px;
+            font-size: 29px;
         }
     }
+    h1{
+        font-size: 48px;
+    }
+    h2{
+        font-size:28px;
+    }
+    .card-body{
+        h5{
+            font-size: 17px;
+        }
+        p{
+            font-size:14px;
+        }
+    } 
 }
 @media screen and (max-width: 768px){
     .card__img-top{
@@ -488,15 +530,24 @@ table{
             height: 240px;
         }
     }
-    .description{
-        p{
-            font-size: 27px;
-        }
-    }
     .title{
         font-size: 33px;
         padding: 2.5%;
     }
+    h1{
+        font-size: 38px;
+    }
+    h2{
+        font-size:23px;
+    }
+    .card-body{
+        h5{
+            font-size: 15px;
+        }
+        p{
+            font-size:12px;
+        }
+    } 
 }
 @media screen and (max-width: 576px){
     .card__img-top{
@@ -514,9 +565,7 @@ table{
         width: 180px;
     }
     h1{
-        font-size:500%;
-        margin-top: 5%;
-        margin-bottom: 0%;
+        font-size:33px;
     }
     footer {
         #etiquetaALogos{
@@ -548,6 +597,17 @@ table{
     .title{
         font-size: 27px;
     }
+    h2{
+        font-size:20px;
+    }
+    .card-body{
+        h5{
+            font-size: 15px;
+        }
+        p{
+            font-size:12px;
+        }
+    } 
 }
 @media screen and (max-width: 450px){
     .card__img-top{
@@ -593,6 +653,9 @@ table{
     }
     .title{
         font-size: 24px;
+    }
+    h1{
+        font-size:25px;
     }
 }
 
