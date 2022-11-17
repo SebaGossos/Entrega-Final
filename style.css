@@ -44,6 +44,11 @@ footer #etiquetaALogos {
   padding-left: 22%;
 }
 
+.img-local img {
+  width: 640px;
+  height: 450px;
+}
+
 nav {
   position: fixed;
   background-color: #454545;
