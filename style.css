@@ -44,10 +44,6 @@ footer #etiquetaALogos {
   padding-left: 22%;
 }
 
-.img_margin {
-  margin-top: 3%;
-}
-
 nav {
   position: fixed;
   background-color: #454545;
@@ -170,7 +166,7 @@ img {
 
 .h2-form {
   text-align: center;
-  background-color: rgb(33, 21, 164);
+  background-color: #3e5f8a;
   margin: 0;
   padding: 1.5rem;
   width: auto;
@@ -212,6 +208,8 @@ input {
   height: 40px;
   font-size: 15px;
   text-align: center;
+  background-color: #5783bc;
+  color: white;
 }
 
 /* Redefinición de clases de bootstrap */

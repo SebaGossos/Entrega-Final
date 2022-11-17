@@ -46,9 +46,7 @@ footer{
     }
 }
 // index
-.img_margin{
-    margin-top: 3%;
-}
+
 
 // barra de navegacion
 nav{
@@ -165,7 +163,7 @@ img{
 }
 .h2-form{
     text-align: center;
-    background-color: rgb(33, 21, 164);
+    background-color: map-get($paleta_de_colores1, primero);
     margin: 0;
     padding: 1.5rem;
     width: auto;
@@ -193,6 +191,8 @@ input {
     height: 40px;
     font-size: 15px;
     text-align: center;
+    background-color: map-get($paleta_de_colores1, segundo);
+    color: white;
 }
 
 /* Redefinición de clases de bootstrap */
