@@ -1,5 +1,5 @@
-@import "./scss/colores/paleta_de_colores.scss";
-@import "./scss/tipografias/tipografias.scss";
+@import "./colores/paleta_de_colores";
+@import "./tipografias/tipografias";
 
 *{
     padding: 0;
@@ -367,15 +367,13 @@ table{
     width: 95%;
 }
 .pictures{
+    grid-area: pictures;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    margin-left: 1%;
+    gap: 5rem;
     img{
         display: block;
-        margin-right: 3rem;
-        grid-area: pictures;
         border-radius: 3%;
         width: 400px;
         height: 400px;
@@ -405,18 +403,19 @@ table{
 
 .description{
     grid-area: description;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin:1% 0% 1% 1%;
-    text-align: center;
+    align-self: center;
+    background-color:map-get($paleta_de_colores1, primero);
+    margin-bottom: 1%;
+    border-radius: 1rem;
+    filter: drop-shadow(1px 2px 3px black);
+    justify-self:center;
     p{
+        @include description;
         padding: 1% 1% 1% 1%;
-        width: 85%;
-        color: rgb(0, 0, 0);
-        font-size: 39px;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: justify;
+        width: 150rem;
+        color: white;
+        font-size: 3.5rem;
+        text-align: center;
     }
 }
 .footer-size{
@@ -434,7 +433,7 @@ table{
 }
 
 /* Medias queries */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1540px) {
     .card__img-top{
         width: 400px;
         height: 220px;
@@ -443,14 +442,7 @@ table{
         width: 1125px;
         height: 750px;
     }
-    .pictures{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 5rem;
-    }
+
     .video{
         iframe{
             width: 854px;
@@ -459,7 +451,8 @@ table{
     }
     .description{
         p{
-            font-size: 33px;
+            width: 90rem;
+            font-size: 3rem;
         }
     }
 }
@@ -499,7 +492,8 @@ table{
     }
     .description{
         p{
-            font-size: 29px;
+            width: 70rem;
+            font-size: 2.7rem;
         }
     }
     h1{
@@ -553,6 +547,18 @@ table{
             font-size:12px;
         }
     } 
+    .description{
+        p{
+            width: 55rem;
+            font-size: 2.4rem;
+        }
+    }
+    .pictures{
+        img{
+            width: 400px;
+            height: 400px;
+        }
+    }
 }
 @media screen and (max-width: 576px){
     .card__img-top{
@@ -588,15 +594,10 @@ table{
     .table-responsive{
         width: 85%;
     }
-    .pictures{
-        img{
-            width: 400px;
-            height: 400px;
-        }
-    }
     .description{
         p{
-            font-size:20px;
+            width: 40rem;
+            font-size: 1.8rem;
         }
     }
     .title{
@@ -613,6 +614,18 @@ table{
             font-size:12px;
         }
     } 
+    .img-local{
+        align-content: center;
+        justify-content: center;
+        div{
+            width: auto;
+            height: auto;
+            img{
+                width: 430px;
+                height: 295px;
+            }    
+        }
+    }
 }
 @media screen and (max-width: 450px){
     .card__img-top{
@@ -661,6 +674,26 @@ table{
     }
     h1{
         font-size:25px;
+    }
+    .description{
+        p{
+            width: 28rem;
+            font-size: 1.3rem;
+        }
+    }
+    .video{
+        iframe{
+            width:  320px;
+            height: 144px;
+        }
+    }
+    .img-local{
+        div{
+            img{
+                width: 300px;
+                height: 190px;
+            }    
+        }
     }
 }
 
