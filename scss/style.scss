@@ -52,6 +52,15 @@ footer{
         height: 450px;
     }
 }
+h2{
+    a{
+        text-decoration: none;
+        color: map-get($paleta_de_colores2, tercero);
+        &:hover{
+            color: map-get($paleta_de_colores2, primero);
+        }
+    }
+}
 
 // barra de navegacion
 nav{
@@ -100,10 +109,9 @@ nav{
     }
 }
 
-/* Esto es para mi html del Samsung galaxy S22 ULTRA */
 a{
     color: rgb(0, 0, 0);
-    font-family: 'Bebas', sans-serif;
+    @include a;
 }
 section{
     position: static;
@@ -176,6 +184,7 @@ img{
 }
 label{
     font-size: 2rem;
+    @include description;
 }
 .form-check label{
     font-size: 1.4rem;
@@ -261,16 +270,7 @@ input {
         height: 1200px;
     }
 }
-#h2S22Ultra__imagenesYReview{
-    color: blue;
-    font-size: 39px;
-    font-family:'Roboto', sans-serif;
-    margin:0% 0% 1% 1%;
-    padding: 1% 1% 1% 1%;
-    background-color: aliceblue;
-    width: 22%;
-    text-align: center;
-}
+
 /* Footer */
 .footer-flex{
     display: flex;
@@ -307,10 +307,10 @@ input {
 }
 
 .title{
+    @include subtitles;
     color: white;
-    font-size: 65px ;
+    font-size: 6rem ;
     font-weight: 600;
-    font-family:'Roboto', sans-serif;
     padding: 2.2%;
     background-color: map-get($paleta_de_colores2, segundo);
     border-radius: 1rem;
@@ -468,6 +468,10 @@ table{
     h1{
         font-size: 58px;
     }
+    .title{
+        font-size: 4.5rem;
+        padding: 2.5%;
+    }
 }
 @media screen and (max-width: 992px) {
     .card__img-top{
@@ -530,7 +534,7 @@ table{
         }
     }
     .title{
-        font-size: 33px;
+        font-size: 3.3rem;
         padding: 2.5%;
     }
     h1{
@@ -601,7 +605,7 @@ table{
         }
     }
     .title{
-        font-size: 27px;
+        font-size: 2.5rem;
     }
     h2{
         font-size:20px;
@@ -670,7 +674,7 @@ table{
         }
     }
     .title{
-        font-size: 24px;
+        font-size: 2rem;
     }
     h1{
         font-size:25px;
