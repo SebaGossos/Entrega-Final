@@ -11,13 +11,13 @@ html{
 }
 
 header{
-    height: 80px;
+    height: 60px;
 }
 footer{
     background-color: map-get($paleta_de_colores2,primero);
     position:static;
     height: 60px;
-    margin: 20px 0% 0% 0%;
+    margin: 0 0% 0% 0%;
     a{
         color: aliceblue;
     }
@@ -47,6 +47,7 @@ footer{
 }
 // index
 .img-local{
+    margin-bottom: 20px;
     img{
         width: 640px;
         height: 450px;
@@ -277,13 +278,20 @@ input {
     justify-content:flex-end;
 }
 
-/* About Us */
+/* Terminos y condiciones */
 .aboutUs-title{
     margin-bottom: 3%;
 }
 .terminosYCondiciones{
     font-size: large;
     padding: 0% 3% 3% 3%;
+    @include description;
+}
+.terminosYCondicionesGeneral{
+    animation-duration: 1.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
 }
 
 /* Paginas de celulares */
@@ -421,6 +429,89 @@ table{
 .footer-size{
     width: 100%;
 }
+// About us
+.main__aboutUS{
+    background-image: url("../assets/imagenes/2098px_bcgimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color:#fff;
+    width: 2098px;
+    height: 1080px;
+    animation-duration: 1.5s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in;
+    .aboutUs_flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        h1{
+            font-size: 75px;
+        }
+        .aboutUs_div1{
+            width: 88rem;
+            display: inline;
+            background-color: map-get($paleta_de_colores2,quinto);
+            border-radius: 1rem;
+            &:hover{
+
+            }
+            h2{
+                @include subtitles;
+                color: white;
+                text-align: start;
+            }
+            p{
+                @include description;
+                text-align: justify;
+                padding: .5rem 1.5rem 1.5rem 1.5rem;
+                color: white;
+                font-size: large;
+            }
+        }
+        .aboutUs_div2{
+            width: 88rem;
+            display: inline;
+            background-color: map-get($paleta_de_colores2,segundo);
+            border-radius: 1rem;
+            h2{
+                @include subtitles;
+                color: white;
+                text-align: start;
+            }
+            p{
+                @include description;
+                text-align: justify;
+                padding: .5rem 1.5rem 1.5rem 1.5rem;
+                color: white;
+                font-size: large;
+            }
+        }
+        .aboutUs_div3{
+            width: 88rem;
+            display: inline;
+            background-color: map-get($paleta_de_colores1,tercero);
+            border-radius: 1rem;
+            h2{
+                @include subtitles;
+                color: white;
+                text-align: start;
+            }
+            p{
+                @include description;
+                text-align: justify;
+                padding: .5rem 1.5rem 1.5rem 1.5rem;
+                color: white;
+                font-size: large;
+            }
+        }
+    }
+}
+
 /* ANIMACIONES */
 @keyframes aparecer {
     0%{

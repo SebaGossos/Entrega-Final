@@ -10,14 +10,14 @@ html {
 }
 
 header {
-  height: 80px;
+  height: 60px;
 }
 
 footer {
   background-color: #e40e0e;
   position: static;
   height: 60px;
-  margin: 20px 0% 0% 0%;
+  margin: 0 0% 0% 0%;
 }
 footer a {
   color: aliceblue;
@@ -44,6 +44,9 @@ footer #etiquetaALogos {
   padding-left: 22%;
 }
 
+.img-local {
+  margin-bottom: 20px;
+}
 .img-local img {
   width: 640px;
   height: 450px;
@@ -298,7 +301,7 @@ input {
   justify-content: flex-end;
 }
 
-/* About Us */
+/* Terminos y condiciones */
 .aboutUs-title {
   margin-bottom: 3%;
 }
@@ -306,6 +309,18 @@ input {
 .terminosYCondiciones {
   font-size: large;
   padding: 0% 3% 3% 3%;
+  font-family: "Roboto", sans-serif;
+}
+
+.terminosYCondicionesGeneral {
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 /* Paginas de celulares */
@@ -445,6 +460,89 @@ table th, table td {
 
 .footer-size {
   width: 100%;
+}
+
+.main__aboutUS {
+  background-image: url("../assets/imagenes/2098px_bcgimg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #fff;
+  width: 2098px;
+  height: 1080px;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+}
+.main__aboutUS .aboutUs_flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+.main__aboutUS .aboutUs_flex h1 {
+  font-size: 75px;
+}
+.main__aboutUS .aboutUs_flex .aboutUs_div1 {
+  width: 88rem;
+  display: inline;
+  background-color: #7b7b7b;
+  border-radius: 1rem;
+}
+.main__aboutUS .aboutUs_flex .aboutUs_div1 h2 {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  text-align: start;
+}
+.main__aboutUS .aboutUs_flex .aboutUs_div1 p {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  color: white;
+  font-size: large;
+}
+.main__aboutUS .aboutUs_flex .aboutUs_div2 {
+  width: 88rem;
+  display: inline;
+  background-color: #ee4242;
+  border-radius: 1rem;
+}
+.main__aboutUS .aboutUs_flex .aboutUs_div2 h2 {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  text-align: start;
+}
+.main__aboutUS .aboutUs_flex .aboutUs_div2 p {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  color: white;
+  font-size: large;
+}
+.main__aboutUS .aboutUs_flex .aboutUs_div3 {
+  width: 88rem;
+  display: inline;
+  background-color: #6a9cde;
+  border-radius: 1rem;
+}
+.main__aboutUS .aboutUs_flex .aboutUs_div3 h2 {
+  font-family: "Rubik", sans-serif;
+  color: white;
+  text-align: start;
+}
+.main__aboutUS .aboutUs_flex .aboutUs_div3 p {
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+  color: white;
+  font-size: large;
 }
 
 /* ANIMACIONES */
